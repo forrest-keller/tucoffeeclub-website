@@ -11,7 +11,7 @@ const themeOverride: ThemeOverride = {
   semanticTokens: {
     colors: {
       brand: {
-        default: "#331f00",
+        default: "#4c2b00",
         _dark: "#b29e84",
       },
       primary: {
@@ -47,21 +47,30 @@ const themeOverride: ThemeOverride = {
     Button: {
       variants: {
         outline: {
-          borderColor: "secondary",
+          borderColor: "primary",
+          color: "primary",
+          _hover: {
+            backgroundColor: "transparent",
+            borderColor: "secondary",
+            color: "secondary",
+          },
+        },
+        ghost: {
           color: "secondary",
           _hover: {
             backgroundColor: "transparent",
-            borderColor: "primary",
             color: "primary",
           },
         },
       },
     },
     Link: {
+      baseStyle: {
+        textColor: "brand",
+      },
       variants: {
         social: {
-          width: "min-content",
-          textColor: "brand",
+          width: "max-content",
           fontSize: "lg",
           lineHeight: "initial",
           display: "grid",
