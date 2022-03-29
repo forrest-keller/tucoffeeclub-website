@@ -1,4 +1,9 @@
-import { ChakraProvider, extendTheme, ThemeOverride } from "@chakra-ui/react";
+import {
+  ChakraProvider,
+  extendTheme,
+  Stack,
+  ThemeOverride,
+} from "@chakra-ui/react";
 import { mode } from "@chakra-ui/theme-tools";
 import type { AppProps } from "next/app";
 
@@ -49,6 +54,19 @@ const themeOverride: ThemeOverride = {
             borderColor: "primary",
             color: "primary",
           },
+        },
+      },
+    },
+    Link: {
+      variants: {
+        social: {
+          width: "min-content",
+          textColor: "brand",
+          fontSize: "lg",
+          lineHeight: "initial",
+          display: "grid",
+          gridAutoFlow: "column",
+          gap: 2,
         },
       },
     },
