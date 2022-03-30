@@ -18,7 +18,7 @@ const Layout: FunctionComponent = ({ children }) => {
 
   return (
     <Center minHeight="100vh">
-      <Container marginY={10} maxWidth="xl">
+      <Container>
         <Stack spacing={10}>
           <Box maxWidth={300} alignSelf="center">
             <Image

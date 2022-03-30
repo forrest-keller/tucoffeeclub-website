@@ -1,4 +1,3 @@
-import { IconType } from "react-icons";
 import { AiFillInstagram } from "react-icons/ai";
 import { FaCalendar, FaFolder } from "react-icons/fa";
 import { MdMail, MdMarkunreadMailbox } from "react-icons/md";
