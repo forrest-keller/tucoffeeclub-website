@@ -1,4 +1,4 @@
-import { Heading, Stack, Text } from "@chakra-ui/react";
+import { Center, Heading, Stack, Text } from "@chakra-ui/react";
 import type { NextPage } from "next";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
@@ -12,17 +12,14 @@ const Home: NextPage = () => {
     <>
       <SEO description={description} />
       <Layout>
-        <Stack spacing={10}>
-          <Stack spacing={5}>
-            <Heading>Brew Some Fun</Heading>
-            <Text fontSize="lg">{description}</Text>
-            <Stack>
-              <Social {...socials.mailingList} />
-              <Social {...socials.calendar} />
-              <Social {...socials.googleDrive} />
-              <Social {...socials.instagram} />
-              <Social {...socials.email} />
-            </Stack>
+        <Stack spacing={5} align="center">
+          <Heading>Get Connected</Heading>
+          <Stack>
+            <Social {...socials.mailingList} />
+            <Social {...socials.calendar} />
+            <Social {...socials.googleDrive} />
+            <Social {...socials.instagram} />
+            <Social {...socials.email} />
           </Stack>
         </Stack>
       </Layout>
