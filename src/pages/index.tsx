@@ -12,8 +12,7 @@ const Home: NextPage = () => {
     <>
       <SEO description={description} />
       <Layout>
-        <Stack spacing={5} align="center">
-          <Heading>Get Connected</Heading>
+        <Stack align="center">
           <Stack>
             <Social {...socials.mailingList} />
             <Social {...socials.calendar} />
