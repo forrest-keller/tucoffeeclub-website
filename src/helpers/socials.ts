@@ -13,7 +13,7 @@ export type SocialKey =
 const socials: { [key in SocialKey]: SocialProps } = {
   mailingList: {
     name: "Mailing List",
-    url: "https://groups.google.com/u/1/a/trinity.edu/g/coffee",
+    url: "https://docs.google.com/forms/d/e/1FAIpQLSf0TQf2LS5CiicxndaGTV-q8K7UsYhF1oZXDuT5nYnmCVq4ug/viewform?usp=sf_link",
     icon: MdMarkunreadMailbox,
   },
   calendar: {
