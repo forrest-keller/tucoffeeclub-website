@@ -3,78 +3,78 @@ import {
   extendTheme,
   Stack,
   ThemeOverride,
-} from "@chakra-ui/react";
-import { mode } from "@chakra-ui/theme-tools";
-import type { AppProps } from "next/app";
+} from '@chakra-ui/react';
+import { mode } from '@chakra-ui/theme-tools';
+import type { AppProps } from 'next/app';
 
 const themeOverride: ThemeOverride = {
   semanticTokens: {
     colors: {
       brand: {
-        default: "#4c2b00",
-        _dark: "#b29e84",
+        default: '#4c2b00',
+        _dark: '#b29e84',
       },
       primary: {
-        default: "#171819",
-        _dark: "#f2f2f2",
+        default: '#171819',
+        _dark: '#f2f2f2',
       },
       secondary: {
-        default: "#818387",
-        _dark: "#b1b4b5",
+        default: '#818387',
+        _dark: '#b1b4b5',
       },
       background: {
-        default: "#ded5c9",
-        _dark: "#3b3225",
+        default: '#ded5c9',
+        _dark: '#3b3225',
       },
     },
   },
   components: {
     Heading: {
       baseStyle: {
-        color: "primary",
+        color: 'primary',
       },
     },
     Text: {
       baseStyle: {
-        color: "primary",
+        color: 'primary',
       },
     },
     Divider: {
       baseStyle: {
-        borderColor: "secondary",
+        borderColor: 'secondary',
       },
     },
     Button: {
       variants: {
         outline: {
-          borderColor: "primary",
-          color: "primary",
+          borderColor: 'primary',
+          color: 'primary',
           _hover: {
-            backgroundColor: "transparent",
-            borderColor: "secondary",
-            color: "secondary",
+            backgroundColor: 'transparent',
+            borderColor: 'secondary',
+            color: 'secondary',
           },
         },
         ghost: {
-          color: "secondary",
+          color: 'secondary',
           _hover: {
-            backgroundColor: "transparent",
-            color: "primary",
+            backgroundColor: 'transparent',
+            color: 'primary',
           },
         },
       },
     },
     Link: {
       baseStyle: {
-        textColor: "brand",
+        textColor: 'brand',
       },
       variants: {
         social: {
-          width: "max-content",
-          fontSize: "lg",
-          lineHeight: "initial",
-          display: "grid",
-          gridAutoFlow: "column",
+          width: 'max-content',
+          fontSize: 'lg',
+          lineHeight: 'initial',
+          display: 'grid',
+          gridAutoFlow: 'column',
           gap: 2,
         },
       },
@@ -84,12 +84,12 @@ const themeOverride: ThemeOverride = {
     global: (props) => ({
       body: {
         // bg: mode("#ded5c9", "#3b3225")(props),
-        bg: "background",
+        bg: 'background',
       },
     }),
   },
   config: {
-    initialColorMode: "system",
+    initialColorMode: 'system',
   },
 };
 

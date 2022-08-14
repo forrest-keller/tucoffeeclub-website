@@ -1,16 +1,16 @@
-import Head from "next/head";
-import { FunctionComponent } from "react";
+import Head from 'next/head';
+import { FunctionComponent } from 'react';
 
 export interface SEOProps {
   title?: string;
   titleBase?: string;
-  description: string;
+  description?: string;
 }
 
 const SEO: FunctionComponent<SEOProps> = ({
   title,
-  titleBase = "Trinity University Coffee Club",
-  description,
+  titleBase = 'Trinity University Coffee Club',
+  description = 'Sharing our love of coffee with the Trinity community.',
 }) => {
   return (
     <Head>

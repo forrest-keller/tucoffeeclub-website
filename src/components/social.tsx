@@ -1,6 +1,6 @@
-import { Icon, Link } from "@chakra-ui/react";
-import { FunctionComponent } from "react";
-import { IconType } from "react-icons";
+import { Icon, Link } from '@chakra-ui/react';
+import { FunctionComponent } from 'react';
+import { IconType } from 'react-icons';
 
 export interface SocialProps {
   name: string;

@@ -1,4 +1,4 @@
-import { MoonIcon, SunIcon } from "@chakra-ui/icons";
+import { MoonIcon, SunIcon } from '@chakra-ui/icons';
 import {
   Button,
   Stack,
@@ -7,11 +7,11 @@ import {
   Box,
   Container,
   Center,
-} from "@chakra-ui/react";
-import Image from "next/image";
-import { FunctionComponent } from "react";
-import darkTransparentLogoVertical from "../../public/dark_transparent_logo_vertical.svg";
-import lightTransparentLogoVertical from "../../public/light_transparent_logo_vertical.svg";
+} from '@chakra-ui/react';
+import Image from 'next/image';
+import { FunctionComponent } from 'react';
+import darkTransparentLogoVertical from '../../public/dark_transparent_logo_vertical.svg';
+import lightTransparentLogoVertical from '../../public/light_transparent_logo_vertical.svg';
 
 const Layout: FunctionComponent = ({ children }) => {
   const { colorMode, toggleColorMode } = useColorMode();
@@ -23,7 +23,7 @@ const Layout: FunctionComponent = ({ children }) => {
           <Box maxWidth={300} alignSelf="center">
             <Image
               src={
-                colorMode === "dark"
+                colorMode === 'dark'
                   ? darkTransparentLogoVertical
                   : lightTransparentLogoVertical
               }
@@ -41,12 +41,12 @@ const Layout: FunctionComponent = ({ children }) => {
             >
               <Stack>
                 <Button
-                  leftIcon={colorMode === "light" ? <MoonIcon /> : <SunIcon />}
+                  leftIcon={colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
                   onClick={() => toggleColorMode()}
                   variant="ghost"
                   size="sm"
                 >
-                  {`${colorMode === "light" ? "Dark" : "Light"} Mode`}
+                  {`${colorMode === 'light' ? 'Dark' : 'Light'} Mode`}
                 </Button>
               </Stack>
             </Stack>
