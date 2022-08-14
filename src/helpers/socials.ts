@@ -16,16 +16,6 @@ const socials: { [key in SocialKey]: SocialProps } = {
     url: "https://docs.google.com/forms/d/e/1FAIpQLSf0TQf2LS5CiicxndaGTV-q8K7UsYhF1oZXDuT5nYnmCVq4ug/viewform?usp=sf_link",
     icon: MdMarkunreadMailbox,
   },
-  calendar: {
-    name: "Calendar",
-    url: "https://calendar.google.com/calendar/u/1?cid=Y19yMDJhOWhsdnJudW90NXNnM2xvcTFqc2tmb0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t",
-    icon: FaCalendar,
-  },
-  googleDrive: {
-    name: "Google Drive",
-    url: "https://drive.google.com/drive/u/1/folders/0ALjCnMs_WNylUk9PVA",
-    icon: FaFolder,
-  },
   instagram: {
     name: "Instagram",
     identifier: "@tucoffeeclub",
@@ -34,8 +24,8 @@ const socials: { [key in SocialKey]: SocialProps } = {
   },
   email: {
     name: "Email",
-    identifier: "coffee@trinity.edu",
-    url: "mailto:coffee@trinity.edu",
+    identifier: "fkeller@trinity.edu",
+    url: "mailto:fkeller@trinity.edu",
     icon: MdMail,
   },
 };
