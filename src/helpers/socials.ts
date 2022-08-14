@@ -5,8 +5,6 @@ import { SocialProps } from "../components/social";
 
 export type SocialKey =
   | "mailingList"
-  | "calendar"
-  | "googleDrive"
   | "instagram"
   | "email";
 
