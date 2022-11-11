@@ -1,9 +1,7 @@
-import { MoonIcon, SunIcon } from '@chakra-ui/icons';
 import {
   Button,
   Stack,
   useColorMode,
-  Text,
   Box,
   Container,
   Center,
@@ -12,6 +10,7 @@ import Image from 'next/image';
 import { FunctionComponent } from 'react';
 import darkTransparentLogoVertical from '../../public/dark_transparent_logo_vertical.svg';
 import lightTransparentLogoVertical from '../../public/light_transparent_logo_vertical.svg';
+import { GiCoffeeBeans } from 'react-icons/gi';
 
 const Layout: FunctionComponent = ({ children }) => {
   const { colorMode, toggleColorMode } = useColorMode();
@@ -19,8 +18,8 @@ const Layout: FunctionComponent = ({ children }) => {
   return (
     <Center minHeight="100vh">
       <Container>
-        <Stack spacing={10}>
-          <Box maxWidth={300} alignSelf="center">
+        <Stack spacing={10} alignItems="center">
+          <Box maxWidth={300}>
             <Image
               src={
                 colorMode === 'dark'
@@ -31,29 +30,13 @@ const Layout: FunctionComponent = ({ children }) => {
             />
           </Box>
           <Box>{children}</Box>
-          <Stack align="center" justify="center">
-            <Stack
-              as="footer"
-              direction="row"
-              spacing={10}
-              alignItems="center"
-              justifyItems="center"
-            >
-              <Stack>
-                <Button
-                  leftIcon={colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
-                  onClick={() => toggleColorMode()}
-                  variant="ghost"
-                  size="sm"
-                >
-                  {`${colorMode === 'light' ? 'Dark' : 'Light'} Mode`}
-                </Button>
-              </Stack>
-            </Stack>
-            <Text fontSize="sm" color="secondary">
-              &copy; Trinity University
-            </Text>
-          </Stack>
+          <Button
+            leftIcon={<GiCoffeeBeans />}
+            onClick={() => toggleColorMode()}
+            variant="ghost"
+          >
+            {`${colorMode === 'light' ? 'Dark' : 'Light'} Roast`}
+          </Button>
         </Stack>
       </Container>
     </Center>

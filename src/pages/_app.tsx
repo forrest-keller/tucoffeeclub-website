@@ -1,13 +1,16 @@
 import {
   ChakraProvider,
   extendTheme,
-  Stack,
   ThemeOverride,
 } from '@chakra-ui/react';
-import { mode } from '@chakra-ui/theme-tools';
 import type { AppProps } from 'next/app';
+import "@fontsource/merriweather"
 
 const themeOverride: ThemeOverride = {
+  fonts: {
+    heading: '"Merriweather", serif',
+    body: '"Merriweather", serif'
+  },
   semanticTokens: {
     colors: {
       brand: {
