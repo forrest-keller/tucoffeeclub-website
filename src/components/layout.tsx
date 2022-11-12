@@ -19,7 +19,7 @@ const Layout: FunctionComponent = ({ children }) => {
     <Center minHeight="100vh">
       <Container>
         <Stack spacing={10} alignItems="center">
-          <Box maxWidth={300}>
+          <Box maxWidth={250}>
             <Image
               src={
                 colorMode === 'dark'
@@ -33,7 +33,8 @@ const Layout: FunctionComponent = ({ children }) => {
           <Button
             leftIcon={<GiCoffeeBeans />}
             onClick={() => toggleColorMode()}
-            variant="ghost"
+            variant="outline"
+            size="sm"
           >
             {`${colorMode === 'light' ? 'Dark' : 'Light'} Roast`}
           </Button>

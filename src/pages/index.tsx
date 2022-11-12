@@ -1,6 +1,7 @@
-import { Box, Heading, Icon, Link, Stack } from '@chakra-ui/react';
+import { Heading, Icon, Link, Stack } from '@chakra-ui/react';
 import type { NextPage } from 'next';
-import { GiMailbox, GiPhotoCamera } from 'react-icons/gi';
+import { GiPhotoCamera } from 'react-icons/gi';
+import { GoMailRead } from 'react-icons/go'
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 
@@ -10,7 +11,7 @@ const Home: NextPage = () => {
       <SEO />
       <Layout>
         <Stack align="center" spacing={10}>
-          <Stack direction={{ base: "column", md: "row" }} spacing={10}>
+          <Stack direction={{ base: "column", md: "row" }} spacing={10} textAlign="center">
             <Stack spacing={1}>
               <Heading fontSize="md" color="secondary">President</Heading>
               <Heading fontSize="xl">Forrest Keller</Heading>
@@ -20,9 +21,9 @@ const Home: NextPage = () => {
               <Heading fontSize="xl">William Hinson</Heading>
             </Stack>
           </Stack>
-          <Stack>
+          <Stack spacing={5} align="center">
             <Link variant="social" href={"https://docs.google.com/forms/d/e/1FAIpQLSf0TQf2LS5CiicxndaGTV-q8K7UsYhF1oZXDuT5nYnmCVq4ug/viewform?usp=sf_link"} isExternal>
-              <Icon fontSize="2xl" as={GiMailbox} />
+              <Icon fontSize="xl" as={GoMailRead} />
               Mailing List
             </Link>
             <Link variant="social" href={"https://www.instagram.com/tucoffeeclub/"} isExternal>
