@@ -26,7 +26,7 @@ const Home: NextPage = () => {
               <Heading fontSize="md" color="secondary">
                 Vice President
               </Heading>
-              <Heading fontSize="xl">Beckett Legore</Heading>
+              <Heading fontSize="xl">Dennis Reck</Heading>
             </Stack>
           </Stack>
           <Stack spacing={5} align="center">
